@@ -1,256 +1,354 @@
-<p align="center"></p>
+# 🚀 Materio Admin Dashboard
+
+Aplikasi Admin Dashboard modern berbasis **Laravel 12** dengan template **Materio Bootstrap**. Dilengkapi dengan sistem autentikasi, manajemen user, role-based access control (RBAC), activity logging, dan dashboard analytics.
 
 <p align="center">
-![alt text](image.png)   <a href="https://themeselection.com/item/materio-dashboard-free-laravel/" target="_blank">
-      <img src="https://cdn.themeselection.com/ts-assets/materio/logo/logo.png" alt="materio-logo" width="40px" height="auto">
-   </a>
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
+  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
 </p>
 
-<h1 align="center">
-   <a href="https://themeselection.com/item/materio-dashboard-free-laravel/" target="_blank" align="center">
-      Materio - Bootstrap 5 HTML + Laravel Admin Template
-   </a>
-</h1>
-
-<p align="center">Most Powerful & Comprehensive Bootstrap 5 HTML + Laravel Admin Dashboard Template built for developers!</p>
-
-<p align="center">
-  <a href="https://github.com/themeselection/materio-bootstrap-html-laravel-admin-template-free/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/themeselection/materio-bootstrap-html-laravel-admin-template-free" alt="license">
-  </a>
-  <a href="https://github.com/themeselection/materio-bootstrap-html-laravel-admin-template-free/releases/">
-    <img src="https://img.shields.io/github/release/themeselection/materio-bootstrap-html-laravel-admin-template-free.svg" alt="GitHub release">
-  </a>
-  <a href="https://github.com/themeselection/materio-bootstrap-html-laravel-admin-template-free/issues">
-    <img src="https://img.shields.io/github/issues/themeselection/materio-bootstrap-html-laravel-admin-template-free.svg" alt="GitHub issues">
-  </a>
-  <a href="https://github.com/themeselection/materio-bootstrap-html-laravel-admin-template-free/issues">
-    <img src="https://img.shields.io/github/issues-closed/themeselection/materio-bootstrap-html-laravel-admin-template-free.svg" alt="GitHub closed issues">
-  </a>
-  <a href="https://twitter.com/Theme_Selection" target="_blank">
-    <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/Theme_Selection">
-  </a>
-</p>
+---
 
 <kbd>[![Materio - Bootstrap 5 HTML Laravel Admin Template Demo Screenshot](https://cdn.themeselection.com/ts-assets/materio/materio-bootstrap-laravel-admin-template-free/banner/banner.png)](https://themeselection.com/item/materio-dashboard-free-laravel/)</kbd>
 
-## Introduction 🚀
+## ✨ Fitur Utama
 
-If you’re a developer looking for the most Powerful & comprehensive [**Free Bootstrap 5 HTML Laravel Admin Template**](https://themeselection.com/item/materio-dashboard-free-laravel/) built for developers, rich with features, and highly customizable look no further than Materio. We’ve followed the highest industry standards to bring you the very best admin template that is not only fast and easy to use but highly scalable. Offering ultimate convenience and flexibility, you’ll be able to build whatever application you want with very little hassle.
+### 🔐 Autentikasi
+- Login dengan validasi status user
+- Registrasi user baru
+- Forgot password
+- Logout dengan konfirmasi modal
+- Middleware check user status (active/inactive/banned)
 
-Build premium quality applications with ease. Use our innovative **[Laravel admin template](https://themeselection.com/item/category/laravel-admin-templates/)** to create eye-catching, high-quality WebApps. Your apps will be completely responsive, ensuring they’ll look stunning and function flawlessly on desktops, tablets, and mobile devices.
+### 👥 Manajemen User
+- CRUD Users dengan soft delete
+- Filter berdasarkan status dan role
+- Pencarian nama/email
+- Avatar upload
+- User profile management
 
-[View Demo](https://demos.themeselection.com/materio-bootstrap-html-laravel-admin-template-free/demo/)
+### 🛡️ Role & Permission (RBAC)
+- Manajemen roles dengan Spatie Permission
+- Manajemen permissions
+- Assign permissions ke roles
+- Role-based middleware
 
-## Installation ⚒️
+### 📊 Dashboard Analytics
+- Statistik user (Total, Active, Inactive, Banned)
+- Chart pertumbuhan user (7 hari)
+- Chart aktivitas berdasarkan kategori
+- Chart user berdasarkan role
+- Chart trend aktivitas bulanan
+- Recent activities table
 
-Installing and running Materio is super easy, please Follow below steps and you will be ready to rock 🤘
+### 📝 Activity Logs
+- Logging semua aktivitas sistem
+- Filter berdasarkan tanggal dan kategori
+- Detail activity dengan properties
 
-1. Open the terminal in your root directory of Materio Laravel.
-2. Use the following command to install the composer
+### ⚙️ Global Settings
+- Pengaturan sistem dinamis
+- Grouped by category
+- Support tipe: text, boolean, json
+
+### 🎨 UI/UX
+- Modern & responsive design
+- ApexCharts untuk visualisasi data
+- Inline SVG icons
+- Modal konfirmasi logout
+- Indonesian language labels
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Version |
+|------------|---------|
+| PHP | 8.2+ |
+| Laravel | 12.x |
+| Vite | 6.x |
+| Bootstrap | 5.x |
+| Spatie Permission | 6.x |
+| ApexCharts | Latest |
+| MySQL | 8.x |
+
+---
+
+## 📦 Instalasi
+
+### Prerequisites
+- PHP >= 8.2
+- Composer
+- Node.js >= 18
+- MySQL/MariaDB
+
+### Steps
 
 ```bash
+# 1. Clone repository
+git clone <repository-url>
+cd materio-bootstrap
+
+# 2. Install PHP dependencies
 composer install
-```
 
-3. Run the following command to generate the key
+# 3. Install Node dependencies
+npm install --legacy-peer-deps
 
-```bash
+# 4. Copy environment file
+cp .env.example .env
+
+# 5. Generate application key
 php artisan key:generate
-```
 
-4. By running the following command, you will be able to get all the dependencies in your **node_modules** folder:
+# 6. Configure database di .env
+# DB_DATABASE=materio_db
+# DB_USERNAME=root
+# DB_PASSWORD=
 
-```bash
-yarn
-```
+# 7. Run migrations & seeders
+php artisan migrate:fresh --seed
 
-5. To run the project, you need to run the following command in the project directory. It will compile JavaScript and Styles.
+# 8. Create storage link
+php artisan storage:link
 
-```bash
-yarn build
-```
+# 9. Build assets
+npm run build
 
-6. To serve the application, you need to run the following command in the project directory
-
-```bash
+# 10. Start development server
 php artisan serve
+npm run dev
 ```
 
-7. Now navigate to the given address, and you will see your application is running.🥳
+---
 
-## Available Tasks 🧑‍💻
+## 👤 Default Users
 
-**Building for Production:** If you want to run the project and make the build in the production mode then run the following command in the root directory, by default The project will continue to run in the development mode:
+| Role | Email | Password |
+|------|-------|----------|
+| Super Admin | superadmin@example.com | password |
+| Admin | admin@example.com | password |
+| Editor | editor@example.com | password |
+| User | user@example.com | password |
+
+---
+
+## 📁 Struktur Database
+
+### Tables
+
+```
+users
+├── id
+├── name
+├── email
+├── password
+├── status (active, inactive, banned)
+├── last_login_at
+├── created_at
+├── updated_at
+└── deleted_at
+
+user_profiles
+├── id
+├── user_id (FK)
+├── avatar_path
+├── phone_number
+├── bio
+├── address
+├── preferences (JSON)
+├── created_at
+└── updated_at
+
+activity_logs
+├── id
+├── log_name
+├── description
+├── subject_type
+├── subject_id
+├── causer_type
+├── causer_id
+├── properties (JSON)
+├── created_at
+└── updated_at
+
+global_settings
+├── id
+├── key
+├── value
+├── type (text, boolean, json)
+├── group
+├── created_at
+└── updated_at
+
+roles (Spatie)
+permissions (Spatie)
+model_has_roles (Spatie)
+model_has_permissions (Spatie)
+role_has_permissions (Spatie)
+```
+
+---
+
+## 🔗 Routes
+
+### Public Routes
+| Method | URI | Description |
+|--------|-----|-------------|
+| GET | /login | Login page |
+| POST | /login | Login action |
+| GET | /register | Register page |
+| POST | /register | Register action |
+| GET | /forgot-password | Forgot password page |
+
+### Authenticated Routes
+| Method | URI | Description |
+|--------|-----|-------------|
+| GET | / | Dashboard |
+| POST | /logout | Logout |
+| GET | /profile | Edit profile |
+| PUT | /profile | Update profile |
+| PUT | /profile/avatar | Update avatar |
+| PUT | /profile/password | Update password |
+
+### Admin Routes (super-admin/admin only)
+| Method | URI | Description |
+|--------|-----|-------------|
+| GET | /admin/users | Users list |
+| GET | /admin/users/create | Create user form |
+| POST | /admin/users | Store user |
+| GET | /admin/users/{id} | Show user |
+| GET | /admin/users/{id}/edit | Edit user form |
+| PUT | /admin/users/{id} | Update user |
+| DELETE | /admin/users/{id} | Delete user |
+| GET | /admin/roles | Roles list |
+| GET | /admin/permissions | Permissions list |
+| GET | /admin/activity-logs | Activity logs |
+| GET | /admin/settings | Settings list |
+
+---
+
+## 📂 Folder Structure
+
+```
+app/
+├── Http/
+│   ├── Controllers/
+│   │   ├── Admin/
+│   │   │   ├── UserController.php
+│   │   │   ├── RoleController.php
+│   │   │   ├── PermissionController.php
+│   │   │   ├── ActivityLogController.php
+│   │   │   └── GlobalSettingController.php
+│   │   ├── Auth/
+│   │   │   └── AuthController.php
+│   │   ├── DashboardController.php
+│   │   └── ProfileController.php
+│   └── Middleware/
+│       └── CheckUserStatus.php
+├── Models/
+│   ├── User.php
+│   ├── UserProfile.php
+│   ├── ActivityLog.php
+│   └── GlobalSetting.php
+
+resources/
+├── views/
+│   ├── content/
+│   │   ├── dashboard/
+│   │   ├── admin/
+│   │   │   ├── users/
+│   │   │   ├── roles/
+│   │   │   ├── permissions/
+│   │   │   ├── activity-logs/
+│   │   │   └── settings/
+│   │   ├── profile/
+│   │   └── authentications/
+│   └── layouts/
+├── menu/
+│   └── verticalMenu.json
+```
+
+---
+
+## 🔒 Security Features
+
+- ✅ CSRF Protection
+- ✅ Password hashing (bcrypt)
+- ✅ Role-based access control
+- ✅ User status validation
+- ✅ Soft deletes for users
+- ✅ Activity logging
+- ✅ Input validation
+
+---
+
+## 🎯 Menu Navigation
+
+```
+Dashboard
+├── Admin
+│   ├── Manajemen User
+│   │   ├── Daftar User
+│   │   └── Tambah User
+│   ├── Role & Permission
+│   │   ├── Roles
+│   │   └── Permissions
+│   ├── Activity Logs
+│   └── Pengaturan
+└── Account
+    └── Profil Saya
+```
+
+---
+
+## 📸 Screenshots
+
+### Dashboard
+- Welcome card dengan greeting
+- Statistik user cards
+- Charts: User growth, Activity by type, Users by role, Monthly trend
+- Recent activities table
+
+### Profile
+- Avatar upload
+- Profile information update
+- Password change
+
+---
+
+## 🧪 Testing
 
 ```bash
-yarn prod
+# Run tests
+php artisan test
+
+# Clear caches
+php artisan cache:clear
+php artisan config:clear
+php artisan view:clear
 ```
 
-## What's Included 📦
+---
 
-- Dashboard
-- Layouts
-  - Without menu
-  - Without Navbar
-  - Container
-  - Fluid
-  - Blank
-- Pages
-  - Account Settings
-  - Login
-  - Register
-  - Forgot Password
-  - Error
-  - Under Maintenance
-- Cards
-- User Interface
-  - **All Bootstrap Components**
-- Extended UI
-  - Perfect Scrollbar
-  - Text Divider
-- Remix Icons
-- Form Elements
-  - Basic Inputs
-  - Input Groups
-- Form Layout
-  - Vertical Form
-  - Horizontal Form
-- Tables
+## 📝 License
 
-## What's in Premium Version 💎
+This project is licensed under the MIT License.
 
-| Materio Free Version                                                                              | Materio Premium Version                                                                                                                                                                       |
-| ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Demo](https://demos.themeselection.com/materio-bootstrap-html-laravel-admin-template-free/demo/) | [Demo](https://demos.themeselection.com/materio-bootstrap-html-laravel-admin-template/demo-1/)                                                                                                |
-| [Download](https://themeselection.com/item/materio-dashboard-free-laravel/)                       | [Purchase](https://themeselection.com/item/materio-dashboard-pro-laravel/)                                                                                                                    |
-| Single vertical Menu                                                                              | Vertical Menu + Horizontal Menu                                                                                                                                                               |
-| Simple Light Style                                                                                | Light, Dark & System Style                                                                                                                                                                    |
-| Default Theme                                                                                     | Default, Semi Dark & Bordered Themes                                                                                                                                                          |
-| Fixed Layout(Menu)                                                                                | Fixed & Static Layout(Menu)                                                                                                                                                                   |
-| 1 Simple Dashboard                                                                                | 5 Niche Dashboards                                                                                                                                                                            |
-| -                                                                                                 | Multiple Ready to use Application like **Laravel CRUD Application**, Email, Chat, Calendar, Kanban, eCommerce, Academy, Logistics, Invoice, Users List, Users View, Roles and Permission etc. |
-| Simple Form Elements                                                                              | Advance form elements, validation & form wizard                                                                                                                                               |
-| Basic Cards                                                                                       | Basic, Advance , Statistics, Analytics, Gamifications and Actions Cards                                                                                                                       |
-| Basic User Interface(Components)                                                                  | Advance and Custom User Interfaces(Components)                                                                                                                                                |
-| Two Extended Components                                                                           | Twelve Ready to use Extended Components                                                                                                                                                       |
-| -                                                                                                 | Quick Search - Quickly navigate between pages (w/ hotkey support)                                                                                                                             |
-| Basic Pages                                                                                       | Authentication Pages in 2 Variants + Ready to use pages like User Profile, Account Settings,FAQ, Help Center, Pricing, Misc etc.                                                              |
-| -                                                                                                 | 3D Characters + Illustrations                                                                                                                                                                 |
-| Basic tables                                                                                      | Advanced & Data tables                                                                                                                                                                        |
-| -                                                                                                 | Quick customization using theme config file                                                                                                                                                   |
-| -                                                                                                 | Leaflet Maps                                                                                                                                                                                  |
-| 1 Chart Library                                                                                   | 2 Chart Libraries                                                                                                                                                                             |
-| -                                                                                                 | Multiple Navbar & Menu Options                                                                                                                                                                |
-| -                                                                                                 | Starter-kit                                                                                                                                                                                   |
-| -                                                                                                 | **Localization support**                                                                                                                                                                      |
-| -                                                                                                 | RTL Support                                                                                                                                                                                   |
-| Regular Support                                                                                   | Priority Support                                                                                                                                                                              |
-| Detailed Documentation                                                                            | Detailed Documentation                                                                                                                                                                        |
+---
 
-## Documentation 📜
+## 👨‍💻 Author
 
-<!-- If you have docs in wiki then use below line -->
+Built with ❤️ using Laravel & Materio Bootstrap Template
 
-Check GitHub [Wiki](https://github.com/themeselection/materio-bootstrap-html-laravel-admin-template-free/wiki) of this repo
+---
 
-<!-- If you have live docs then use below line -->
+## 🙏 Credits
 
-Check out our live [Documentation](https://demos.themeselection.com/materio-bootstrap-html-admin-template/documentation/laravel-introduction.html)
-
-## Browser Support 🖥️
-
-![chrome](https://github.com/nuxt/nuxt/assets/47495003/bbb6d7b0-2db6-4af4-abdc-a73de71dd287)
-&nbsp;&nbsp;![firefox](https://github.com/nuxt/nuxt/assets/47495003/bca1f2d0-d597-453b-8525-5c94e36bfc33)
-&nbsp;&nbsp;![safari](https://github.com/nuxt/nuxt/assets/47495003/8ecbb395-78fb-40fb-bb59-7301bf8a7e5d)
-&nbsp;&nbsp;![Microsoft Edge](https://github.com/nuxt/nuxt/assets/47495003/f945821b-0cbd-464d-8103-824d4d5c4e9a)
-
-## Contributing 🦸
-
-Contribution are always welcome and recommended! Here is how:
-
-- Fork the repository ([here is the guide](https://docs.github.com/en/get-started/quickstart/fork-a-repo)).
-- Clone to your machine `git clone https://github.com/themeselection/materio-bootstrap-html-laravel-admin-template-free.git` Make your changes
-- Create a pull request
-
-### Contribution Requirements 🧰
-
-- When you contribute, you agree to give a non-exclusive license to ThemeSelection to use that contribution in any context as we (ThemeSelection) see appropriate.
-- If you use content provided by another party, it must be appropriately licensed using an open source license.
-- Contributions are only accepted through Github pull requests.
-- Finally, contributed code must work in all supported browsers (see above for browser support).
-
-## Changelog 📆
-
-Please refer to the [CHANGELOG](CHANGELOG.md) file. We will add a detailed release notes to each new release.
-
-## Support 🧑🏻‍💻
-
-For free products, enjoy community support via GitHub issues. Upgrade to Premium for dedicated support from our expert team.
-
-## License &copy;
-
-- Copyright © [ThemeSelection](https://themeselection.com/)
-- Licensed under [MIT](LICENSE)
-- All our free items are Open Source and licensed under MIT. You can use our free items for personal as well as commercial purposes. We just need an attribution from your end. Copy the below link and paste it at the footer of your web application or project.
-
-  ```html
-  <a href="https://themeselection.com/">ThemeSelection</a>
-  ```
-
-## Also Available In
-
-<p>
-  <!-- Figma -->
-   <a href="https://themeselection.com/item/materio-figma-admin-dashboard-ui-kit/" target="_blank"><picture><source width="auto" height="74px" media="(prefers-color-scheme: dark)" srcset="https://github.com/microsoft/vscode/assets/47495003/0318a6c8-4f9b-4cf6-af5e-d357f909ea2b"><source width="auto" height="74px" media="(prefers-color-scheme: light)" srcset="https://github.com/microsoft/vscode/assets/47495003/47f21dfe-c1fc-4a7d-859e-4d98f8cdded1"><img width="auto" height="74px" alt="html" src="https://github.com/microsoft/vscode/assets/47495003/47f21dfe-c1fc-4a7d-859e-4d98f8cdded1"></picture></img></a>&nbsp;&nbsp;
-   <!-- HTML -->
-   <a href="https://themeselection.com/item/materio-dashboard-pro-bootstrap/" target="_blank"><picture><source width="auto" height="74px" media="(prefers-color-scheme: dark)" srcset="https://github.com/microsoft/vscode/assets/47495003/5fe77c46-2e4c-475a-8dec-e30e2badddee"><source width="auto" height="74px" media="(prefers-color-scheme: light)" srcset="https://github.com/microsoft/vscode/assets/47495003/3f5decd8-cd99-4ed3-aa76-528ca061385b"><img width="auto" height="74px" alt="html" src="https://github.com/microsoft/vscode/assets/47495003/3f5decd8-cd99-4ed3-aa76-528ca061385b"></picture></img></a>&nbsp;&nbsp;
-   <!-- HTML + Laravel -->
-   <a href="https://themeselection.com/item/materio-dashboard-pro-laravel/" target="_blank"><picture><source width="auto" height="74px" media="(prefers-color-scheme: dark)" srcset="https://github.com/microsoft/vscode/assets/47495003/efe420e4-9863-41b7-9eda-47ea94f21a62"><source width="auto" height="74px" media="(prefers-color-scheme: light)" srcset="https://github.com/microsoft/vscode/assets/47495003/be3b86e0-4d5e-4736-bf89-4267fb4d6710"><img width="auto" height="74px" alt="html_laravel" src="https://github.com/microsoft/vscode/assets/47495003/be3b86e0-4d5e-4736-bf89-4267fb4d6710"></picture></img></a>&nbsp;&nbsp;
-   <!-- HTML + Django -->
-   <a href="https://themeselection.com/item/materio-dashboard-pro-django/" target="_blank"><picture><source width="auto" height="74px" media="(prefers-color-scheme: dark)" srcset="https://github.com/microsoft/vscode/assets/47495003/3c87d33b-1223-4aaa-a652-388dcb714c98"><source width="auto" height="74px" media="(prefers-color-scheme: light)" srcset="https://github.com/microsoft/vscode/assets/47495003/51db1947-eac1-466f-87fd-5a209010fe9c"><img width="auto" height="74px" alt="html_django" src="https://github.com/microsoft/vscode/assets/47495003/51db1947-eac1-466f-87fd-5a209010fe9c"></picture></img></a>&nbsp;&nbsp;
-   <!-- .Net Core -->
-   <a href="https://themeselection.com/item/materio-aspnet-core-mvc-admin-template/" target="_blank"><picture><source width="auto" height="74px" media="(prefers-color-scheme: dark)" srcset="https://github.com/microsoft/vscode/assets/47495003/6327fd7b-9c54-4189-a852-28551ad0e002"><source width="auto" height="74px" media="(prefers-color-scheme: light)" srcset="https://github.com/microsoft/vscode/assets/47495003/9856e9d5-021f-4573-902a-702e80dd0102"><img width="auto" height="74px" alt="net_core" src="https://github.com/microsoft/vscode/assets/47495003/9856e9d5-021f-4573-902a-702e80dd0102"></picture></img></a>&nbsp;&nbsp;
-   <!-- NextJS -->
-   <a href="https://themeselection.com/item/materio-mui-react-nextjs-admin-template/" target="_blank"><picture><source width="auto" height="74px" media="(prefers-color-scheme: dark)" srcset="https://github.com/microsoft/vscode/assets/47495003/66344629-6d21-4f92-9078-f479b39cb34e"><source width="auto" height="74px" media="(prefers-color-scheme: light)" srcset="https://github.com/microsoft/vscode/assets/47495003/e1daf4e1-3fa5-4a44-969a-6143ddd67310"><img width="auto" height="74px" alt="next.js" src="https://github.com/microsoft/vscode/assets/47495003/e1daf4e1-3fa5-4a44-969a-6143ddd67310"></picture></img></a>&nbsp;&nbsp;
-   <!-- React -->
-   <a href="https://themeselection.com/item/materio-mui-react-nextjs-admin-template/" target="_blank"><picture><source width="auto" height="74px" media="(prefers-color-scheme: dark)" srcset="https://github.com/microsoft/vscode/assets/47495003/3877046e-c652-4b3d-99e9-2e134da1d6cf"><source width="auto" height="74px" media="(prefers-color-scheme: light)" srcset="https://github.com/microsoft/vscode/assets/47495003/8c8c940e-d8f9-4213-a7f7-f8bc4968f169"><img width="auto" height="74px" alt="react" src="https://github.com/microsoft/vscode/assets/47495003/8c8c940e-d8f9-4213-a7f7-f8bc4968f169"></picture></img></a>&nbsp;&nbsp;
-   <!-- Vue -->
-   <a href="https://themeselection.com/item/materio-vuetify-vuejs-admin-template/" target="_blank"><picture><source width="auto" height="74px" media="(prefers-color-scheme: dark)" srcset="https://github.com/microsoft/vscode/assets/47495003/881bbbb8-d1c9-421c-9bce-4ea43dfa9e6e"><source width="auto" height="74px" media="(prefers-color-scheme: light)" srcset="https://github.com/microsoft/vscode/assets/47495003/b02d6473-0345-42c2-be58-e648806104fa"><img width="auto" height="74px" alt="vue" src="https://github.com/microsoft/vscode/assets/47495003/b02d6473-0345-42c2-be58-e648806104fa"></picture></img></a>&nbsp;&nbsp;
-   <!-- Vue + Laravel -->
-   <a href="https://themeselection.com/item/materio-vuetify-vuejs-laravel-admin-template/" target="_blank"><picture><source width="auto" height="74px" media="(prefers-color-scheme: dark)" srcset="https://github.com/microsoft/vscode/assets/47495003/20b6428e-3fa5-4f80-a389-9e4cd732c2de"><source width="auto" height="74px" media="(prefers-color-scheme: light)" srcset="https://github.com/microsoft/vscode/assets/47495003/3008d3eb-7b5b-4d9c-8563-837744a901da"><img width="auto" height="74px" alt="vue_laravel" src="https://github.com/microsoft/vscode/assets/47495003/3008d3eb-7b5b-4d9c-8563-837744a901da"></picture></img></a>&nbsp;&nbsp;
-</p>
-
-<!-- Add other pro variants here. You can get the logo URL from here: https://icones.js.org/collection/logos -->
-
-## Looking For Premium Admin Templates ?? 👀
-
-**[ThemeSelection](https://themeselection.com/)** provides Selected high quality, modern design, professional and easy-to-use **Fully Coded Dashboard Templates & UI Kits** to create your applications faster!
-
-- [Bootstrap Admin Templates](https://themeselection.com/item/category/bootstrap-admin-template/)
-- [VueJS Admin Templates](https://themeselection.com/item/category/vuejs-admin-templates/)
-- [Laravel Admin Templates](https://themeselection.com/item/category/laravel-admin-templates/)
-- [Django Admin Templates](https://themeselection.com/item/category/django-admin-template/)
-- [React (NextJS) Admin Templates](https://themeselection.com/item/category/next-js-admin-template/)
-- [ASP.Net Core Admin Templates](https://themeselection.com/item/category/asp-net-dashboard/)
-- [Free UI Kits](https://themeselection.com/item/category/free-ui-kits/)
-
-If you want to [Free Admin Templates](https://themeselection.com/item/category/free-admin-templates/) like Materio then do visit [ThemeSelection](https://themeselection.com/).
-
-## Useful Links 🎁
-
-- [Vue CheatSheet](https://vue-cheatsheet.themeselection.com/)
-- [Freebies](https://themeselection.com/item/category/freebies/)
-- [Free Admin Templates](https://themeselection.com/item/category/free-admin-templates/)
-- [Bootstrap 5 CheatSheet](https://bootstrap-cheatsheet.themeselection.com/)
-- [FlyonUI](https://flyonui.com/)
-- [JetShip](https://demos.themeselection.com/jetship-laravel-starter-kit/)
-
-## Social Media :earth_africa:
-
-- [x](https://x.com/Theme_Selection)
-- [Facebook](https://www.facebook.com/ThemeSelections/)
-- [Pinterest](https://www.pinterest.com/themeselection/)
-- [Instagram](https://www.instagram.com/themeselection/)
-- [Discord](https://discord.com/invite/kBHkY7DekX)
-- [YouTube](https://www.youtube.com/channel/UCuryo5s0CW4aP83itLjIdZg)
+- [Laravel](https://laravel.com)
+- [Materio Bootstrap Template](https://themeselection.com/materio-bootstrap-html-admin-template/)
+- [Spatie Laravel Permission](https://spatie.be/docs/laravel-permission)
+- [ApexCharts](https://apexcharts.com)
