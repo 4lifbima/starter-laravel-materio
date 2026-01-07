@@ -1,0 +1,68 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "name": "Dashboard",
+      "icon": "menu-icon icon-base ri ri-home-smile-line",
+      "slug": "dashboard"
+    },
+    {
+      "menuHeader": "Admin"
+    },
+    {
+      "name": "Manajemen User",
+      "icon": "menu-icon icon-base ri ri-group-line",
+      "slug": "admin-users",
+      "submenu": [
+        {
+          "url": "admin/users",
+          "name": "Daftar User",
+          "slug": "admin-users-index"
+        },
+        {
+          "url": "admin/users/create",
+          "name": "Tambah User",
+          "slug": "admin-users-create"
+        }
+      ]
+    },
+    {
+      "name": "Role & Permission",
+      "icon": "menu-icon icon-base ri ri-shield-user-line",
+      "slug": "admin-rbac",
+      "submenu": [
+        {
+          "url": "admin/roles",
+          "name": "Roles",
+          "slug": "admin-roles-index"
+        },
+        {
+          "url": "admin/permissions",
+          "name": "Permissions",
+          "slug": "admin-permissions-index"
+        }
+      ]
+    },
+    {
+      "url": "admin/activity-logs",
+      "name": "Activity Logs",
+      "icon": "menu-icon icon-base ri ri-history-line",
+      "slug": "admin-activity-logs"
+    },
+    {
+      "url": "admin/settings",
+      "name": "Pengaturan",
+      "icon": "menu-icon icon-base ri ri-settings-3-line",
+      "slug": "admin-settings"
+    },
+    {
+      "menuHeader": "Account"
+    },
+    {
+      "url": "profile",
+      "name": "Profil Saya",
+      "icon": "menu-icon icon-base ri ri-user-settings-line",
+      "slug": "profile"
+    }
+  ]
+}
